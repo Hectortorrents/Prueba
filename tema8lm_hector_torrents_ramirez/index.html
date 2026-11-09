@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hector Torrents Ramirez">
+    <title>Índice - Prácticas de HTML y CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 40px 20px;
+        text-align: center;
+        color: #1e293b;
+      }
+
+      .contenedor {
+        max-width: 950px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 2px solid #cbd5e1;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      h1 {
+        font-family: 'Cinzel Decorative', serif;
+        color: #1f364d;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      p.subtitulo {
+        color: #64748b;
+        font-size: 16px;
+        margin-bottom: 35px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #1f364d;
+        color: #ffffff;
+        padding: 14px 18px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      td {
+        padding: 14px 18px;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8fafc;
+      }
+
+      tr:hover {
+        background-color: #bae6fd;
+      }
+
+      a.boton-enlace {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #0284c7;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      a.boton-enlace:hover {
+        background-color: #0369a1;
+      }
+
+      .autor {
+        margin-top: 40px;
+        font-size: 13px;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="contenedor">
+      <h1>Índice de Prácticas de HTML y CSS</h1>
+      <p class="subtitulo">Panel de acceso a todos los ejercicios realizados</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>N.º</th>
+            <th>Ejercicio</th>
+            <th>Conceptos Aplicados</th>
+            <th>Acceso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td>Menú con Iconos</td>
+            <td>Lista no numerada (<code>&lt;ul&gt;</code>), Font Awesome, efectos hover.</td>
+            <td><a href="ejercicio_menu_iconos.html" class="boton-enlace">Abrir Página</a></td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td>Tabla de Estudiantes</td>
+            <td>Tabla de 5 columnas, fuente tipográfica, <code>monospace</code>, filas alternas (stripping).</td>
+            <td><a href="ejercicio_tabla_estudiantes.html" class="boton-enlace">Abrir Página</a></td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td>Conceptos de CSS</td>
+            <td>Box Model, <code>overflow</code>, <code>box-sizing</code> y <code>display</code>.</td>
+            <td><a href="ejercicio_conceptos_css.html" class="boton-enlace">Abrir Página</a></td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td>Formas Geométricas</td>
+            <td>Uso de bordes de colores para triángulos y <code>border-radius</code> para círculos/semicírculos.</td>
+            <td><a href="ejercicio_formas_geometricas.html" class="boton-enlace">Abrir Página</a></td>
+          </tr>
+          <tr>
+            <td><strong>05</strong></td>
+            <td>Cajas CSS (Recuadros)</td>
+            <td>Estilos avanzados de cajas, bordes decorativos, gradientes y distribución en tabla.</td>
+            <td><a href="cajas_con_frases.html" class="boton-enlace">Abrir Página</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="autor">
+        Autor: Hector Torrents Ramirez
+      </div>
+    </div>
+
+  </body>
+</html>

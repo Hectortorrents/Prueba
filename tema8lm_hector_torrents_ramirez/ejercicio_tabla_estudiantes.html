@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hector Torrents Ramirez">
+    <title>Tabla de estudiantes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Cinzel Decorative', serif;
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 14px;
+        background-color: white;
+      }
+      th {
+        background-color: #1f364d;
+        color: white;
+        padding: 12px 16px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: left;
+        font-family: sans-serif;
+      }
+      td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #cbd5e1;
+        border-right: 1px solid #e2e8f0;
+        text-align: left;
+        color: #1e293b;
+      }
+      td:last-child {
+        border-right: none;
+      }
+      td.codigo {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 15px;
+        color: #0284c7;
+      }
+      tr:nth-child(even) {
+        background-color: #bae6fd;
+      }
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+      tr:hover {
+        background-color: #7dd3fc;
+        transition: background-color 0.2s ease;
+      }
+      h2 {
+        font-size: 26px;
+        margin-bottom: 2px;
+        color: #1e293b;
+      }
+      p.sub {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: #475569;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Tabla de estudiantes</h2>
+    <p class="sub">Resultados académicos</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>N.°</th>
+          <th>NOMBRE</th>
+          <th>ASIGNATURA</th>
+          <th>NOTA</th>
+          <th>ESTADO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="codigo">001</td>
+          <td>Pablo García</td>
+          <td>Empleabilidad</td>
+          <td>6.2</td>
+          <td>Aprobado</td>
+        </tr>
+        <tr>
+          <td class="codigo">002</td>
+          <td>Luis Martos</td>
+          <td>Base de datos</td>
+          <td>5.2</td>
+          <td>Aprobado</td>
+        </tr>
+        <tr>
+          <td class="codigo">003</td>
+          <td>Marcos López</td>
+          <td>JavaScript</td>
+          <td>5</td>
+          <td>Aprobado</td>
+        </tr>
+        <tr>
+          <td class="codigo">004</td>
+          <td>Pablo Ruiz</td>
+          <td>Programación</td>
+          <td>4.5</td>
+          <td>Suspenso</td>
+        </tr>
+        <tr>
+          <td class="codigo">005</td>
+          <td>Laura Pérez</td>
+          <td>HTML</td>
+          <td>9.7</td>
+          <td>Aprobado</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
